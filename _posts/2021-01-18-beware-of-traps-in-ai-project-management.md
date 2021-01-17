@@ -79,7 +79,7 @@ This approach goes long ways down the road to have sustainable AI program when t
 
 ### Trap-5. MLOps / AIOps is part time activity
 
-This map happen when AI projects are being lead by seasoned traditional project managers does not have hands-on experience and insights into technical needs and challenges on the daily nuances of AI projects. They will follow the industry proven practices on how to separate critical software components, process into different teams - Developers, QA, DevOps.
+This happen when AI projects are being lead by seasoned traditional project managers does not have hands-on experience and insights into technical needs and challenges on the daily nuances of AI projects. They will follow the industry proven practices on how to separate critical software components, process into different teams - Developers, QA, DevOps.
 
 The AI DevOps requires specialized GPU runtime enabled environments, different dependencies, model logistics, above all how the AI code base, AI models and other data is being managed. Failure to meet these will results into redundancy of code, repetitive manual process and problems when trying to scale up with different architectures and models.
 
