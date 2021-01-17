@@ -3,7 +3,7 @@ layout: post
 title:  "Beware of Traps in AI Project Management"
 author: mangalbhaskar
 categories: [ AI Project Management, k-series ]
-image: assets/images/giant_spider_in_web.jpg
+image: assets/images/beware-of-traps-in-ai-project-management.jpg
 featured: true
 comments: false
 ---
