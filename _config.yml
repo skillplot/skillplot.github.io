@@ -160,6 +160,13 @@ exclude:
 # atom_feed:
 #   path                   : # blank (default) uses feed.xml
 
+comments:
+  provider: staticman_v2
+  staticman:
+    branch: master
+    endpoint: https://skillplot-staticman.herokuapp.com/v3/entry/github
+
+
 # search                   : # true, false (default)
 # search_full_content      : # true, false (default)
 # search_provider          : # lunr (default), algolia, google
