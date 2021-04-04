@@ -5,7 +5,7 @@ author: mangalbhaskar
 categories: [ AI Project Management, k-series ]
 image: assets/images/faqs-in-ai-project-management.jpg
 featured: true
-comments: false
+comments: true
 ---
 
 This is the second article in the knowledge series for **Start adopting AI to generate Business Value**.
