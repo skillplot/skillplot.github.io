@@ -2,8 +2,8 @@
 name: "Skillplot"
 title: "Skillplot"
 description: "Because knowledge belongs to humanity."
-logo: '/assets/images/logo.png'
-favicon: '/assets/images/logo.png'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
 url: https://skillplot.github.io
 # baseurl: skillplot.github.io
 # google_analytics: ''
