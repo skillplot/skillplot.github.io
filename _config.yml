@@ -2,14 +2,13 @@
 name: "Skillplot"
 title: "Skillplot"
 description: "Because knowledge belongs to humanity."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-baseurl: /skillplot.github.io
+logo: '/assets/images/logo.png'
+favicon: '/assets/images/logo.png'
+url: https://skillplot.github.io
+# baseurl: skillplot.github.io
 # google_analytics: ''
 # disqus: 'demowebsite'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
-permalink: /:title/
 
 # Authors
 authors:
@@ -18,18 +17,32 @@ authors:
     display_name: Mangal
     # gravatar: 
     email: skillplot@gmail.com
-    web: https://www.skillplot.com
+    web: http://www.skillplot.org
     twitter: https://twitter.com/theskillplot
     description: "Author of Skillplot."
 
-# Plugins
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+  # - jekyll-include-cache
+
+
+# mimic GitHub Pages with --safe
+# whitelist:
+#   - jekyll-paginate
+#   - jekyll-sitemap
+#   - jekyll-gist
+#   - jekyll-feed
+#   - jekyll-seo-tag
+#   - jekyll-archives
+#   # - jekyll-include-cache
+
+
 # Archives
 jekyll-archives:
   enabled:
@@ -37,20 +50,50 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+# compress_html:
+#   clippings: all
+#   ignore:
+#     envs: development
+
+# Outputting
+permalink: /:title/
+permalink: /:categories/:title/
+
+words_per_minute: 200
+
 # Pagination 
-paginate: 6
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-    
-# Other
+# paginate_path: /blog/page:num/
+timezone: Asia/Kolkata # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Markdown Processing
 markdown: kramdown
 
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   syntax_highlighter_opts:
+#     block:
+#       line_numbers: true
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
@@ -60,6 +103,76 @@ adsense-data-ad-slot: ""
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, CREDITS.md, Gemfile, Gemfile.lock]
-staticman_url: https://skillplot-staticman.herokuapp.com/v2/entry/dhritaka/skillplot.github.io/master/comments
+# include: ["_pages"]
+include:
+  - .htaccess
+  - _pages
+# exclude: [changelog.md, LICENSE.txt, README.md, CREDITS.md, Gemfile, Gemfile.lock]
+exclude: 
+  - node_modules
+  - changelog.md
+  - LICENSE.txt
+  - README.md
+  - CREDITS.md
+  - Gemfile
+  - Gemfile.lock
+  # - vendor
+  # - .asset-cache
+  # - .bundle
+  # - .jekyll-assets-cache
+  # - .sass-cache
+  # - assets/js/plugins
+  # - assets/js/_main.js
+  # - assets/js/vendor
+  # - Capfile
+  # - config
+  # - Gruntfile.js
+  # - gulpfile.js
+  # - log
+  # - package.json
+  # - package-lock.json
+  # - Rakefile
+  # - tmp
+  # - /docs # ignore Minimal Mistakes /docs
+  # - /test # ignore Minimal Mistakes /test
+# staticman_url: https://skillplot-staticman.herokuapp.com/v2/entry/dhritaka/skillplot.github.io/master/comments
+comments:
+  provider               : "staticman" #"facebook" # "disqus"
+  disqus:
+    shortname            : # 
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                : # 
+    num_posts            : #10
+    colorscheme          : #"light"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : "master"
+    endpoint             :  https://skillplot-staticman.herokuapp.com/v3/entry/dhritaka/skillplot.github.io
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
 
+# search                   : # true, false (default)
+# search_full_content      : # true, false (default)
+# search_provider          : # lunr (default), algolia, google
+# algolia:
+#   application_id         : # YOUR_APPLICATION_ID
+#   index_name             : # YOUR_INDEX_NAME
+#   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+#   powered_by             : # true (default), false
+# google:
+#   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+#   instant_search         : # false (default), true
+# # SEO Related
+# google_site_verification :
+# bing_site_verification   :
+# yandex_site_verification :
+# naver_site_verification  :
