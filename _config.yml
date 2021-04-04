@@ -61,3 +61,5 @@ adsense-data-ad-slot: ""
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, CREDITS.md, Gemfile, Gemfile.lock]
+staticman_url: https://skillplot-staticman.herokuapp.com/v2/entry/dhritaka/skillplot.github.io/master/comments
+
