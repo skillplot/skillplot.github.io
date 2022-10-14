@@ -1,0 +1,44 @@
+# - title: "About"
+#   href: "/about/"
+#   active: about
+#   classes: ""
+
+- title: "Blog"
+  href: "/blog/"
+  active: blog
+  classes: ""
+  target: ""
+
+# - title: "CV"
+#   href: "/cv/"
+#   active: cv
+#   classes: ""
+
+# - title: "Courses"
+#   href: "/courses/"
+#   active: courses
+#   classes: "fa fa-list-ul fa-lg"
+
+# - title: "Research"
+#   href: "/research/"
+#   active: research
+#   classes: "fas fa-book-reader"
+
+# - title: "Lectures"
+#   href: "/teaching/"
+#   active: teaching
+#   classes: "fas fa-book"
+
+- title: "lscripts"
+  href: "https://skillplot.github.io/lscripts-docker"
+  active: lscripts
+  classes: "fas fa-book"
+  target: "_blank"
+
+# - title: "Miscellany"
+#   href: "/miscellany/"
+#   subcategories:
+#     - subtitle: "Item 1"
+#       subhref: "/miscellany/item-1/"
+#     - subtitle: "Item 2"
+#       subhref: "/miscellany/item-2/"
